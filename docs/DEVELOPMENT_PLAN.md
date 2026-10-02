@@ -4,20 +4,20 @@ This document outlines the structured, phase-by-phase engineering plan for build
 
 ---
 
-## 📌 Phase Summary Matrix
+## 📌 GitHub Issues & Team Responsibility Matrix
 
-| Phase | Module | Focus Area | Deliverables |
-| :---: | :---: | :--- | :--- |
-| **1** | Tooling | Workspace Setup | Initialize `/server` and `/client` directories with dependencies |
-| **2** | Backend | Database & Schemas | MongoDB connection + 4 Mongoose models (`User`, `Category`, `Product`, `Order`) |
-| **3** | Backend | Auth & Middlewares | bcrypt password hashing, JWT generation, `protect` & `admin` middlewares |
-| **4** | Backend | RESTful Controllers | Category CRUD, Product CRUD with query filters, Order placement & status updates |
-| **5** | Frontend | Foundation & Styling | React 18 + Vite, Tailwind CSS configuration, Axios client configuration |
-| **6** | Frontend | Auth & Routing | `AuthContext`, Login/Register views, Protected Route guards |
-| **7** | Frontend | Storefront & Discovery| Home view, responsive product catalog, category filters, and product details |
-| **8** | Frontend | Cart & Checkout | `CartContext` with stock clamp, COD checkout form, order submission |
-| **9** | Frontend | Admin Dashboard | Admin sidebar, Category table/modals, Product management, Order status management |
-| **10**| Testing | End-to-End Demo Audit | Full user and admin workflow validation against acceptance criteria |
+| Issue # | Focus Area | Module | Primary Assignee | Deliverable / Goal |
+| :---: | :--- | :---: | :--- | :--- |
+| **[#1](https://github.com/vaishnavimore1311/E-comm/issues/1)** | Server Setup & Mongoose Models | Backend | **Vaishnavi** (`@vaishnavimore1311`) | Setup Express server, DB config, and User, Category, Product, Order models |
+| **[#2](https://github.com/vaishnavimore1311/E-comm/issues/2)** | Vite, Tailwind & Layout Architecture | Frontend | **Shweta** (`@Shwetadhanawade13`) | Vite + React, Tailwind CSS theme, Axios interceptor, Navbar, Footer & Layouts |
+| **[#3](https://github.com/vaishnavimore1311/E-comm/issues/3)** | JWT Auth, bcrypt & Route Middlewares | Backend | **Vaishnavi** (`@vaishnavimore1311`) | Register/Login APIs, bcrypt hashing, JWT issuance, `protect` & `admin` guards |
+| **[#4](https://github.com/vaishnavimore1311/E-comm/issues/4)** | AuthContext & Protected Route Guards | Frontend | **Shweta** (`@Shwetadhanawade13`) | React AuthContext, Login/Register UI forms, and Protected/Admin route guards |
+| **[#5](https://github.com/vaishnavimore1311/E-comm/issues/5)** | Order Processing & Zero-Trust Pricing | Backend | **Vaishnavi** (`@vaishnavimore1311`) | Secure checkout API, DB price recalculation, atomic stock decrement & status PATCH |
+| **[#6](https://github.com/vaishnavimore1311/E-comm/issues/6)** | Public Catalog, Filters & Search | Frontend | **Shweta** (`@Shwetadhanawade13`) | Home view, Product catalog, category filter pills, search input, Product Details |
+| **[#7](https://github.com/vaishnavimore1311/E-comm/issues/7)** | Order Fulfillment & Status Dashboard | Admin UI | **Vaishnavi** (`@vaishnavimore1311`) | Admin orders table, customer shipping address inspection, status dropdown updater |
+| **[#8](https://github.com/vaishnavimore1311/E-comm/issues/8)** | Categories & Products Management CRUD | Admin UI | **Shweta** (`@Shwetadhanawade13`) | Admin Category and Product tables, add/edit modals, delete confirm dialogs |
+| **[#9](https://github.com/vaishnavimore1311/E-comm/issues/9)** | Cart Context & COD Checkout Flow | Fullstack | **Vaishnavi & Shweta** | Cart state with stock limits, COD checkout form, order submission & My Orders |
+| **[#10](https://github.com/vaishnavimore1311/E-comm/issues/10)**| End-to-End Testing & Demo Verification | QA / Demo | **Vaishnavi & Shweta** | Full 10-step demo walkthrough verification across both roles |
 
 ---
 
